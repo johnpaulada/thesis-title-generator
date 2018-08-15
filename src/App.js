@@ -15,6 +15,7 @@ const OBJECTIVES = [
 ]
 
 const OBJECTIVE_ADJECTIVES = [
+  "Collaborative",
   "Predictive",
   "Distributed",
   "Decentralized",
@@ -24,7 +25,9 @@ const OBJECTIVE_ADJECTIVES = [
   "Improved",
   "Crowdsourced",
   "Offline-first",
-  "High-Performance"
+  "High-Performance",
+  "Effective",
+  "Next-Generation"
 ]
 
 const METHODS = [
@@ -47,7 +50,9 @@ const METHOD_ADJECTIVES = [
   "Highly-Optimized",
   "Flexible",
   "Fast",
-  "Performant"
+  "Performant",
+  "Robust",
+  "Efficient"
 ]
 
 const grammar = {
