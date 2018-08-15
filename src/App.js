@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import Generatr from './Generatr'
+import {
+  Container,
+  Header,
+  GenerateButton
+} from './Styles'
 
 const OBJECTIVES = [
   "Shift Scheduler",
@@ -45,9 +50,11 @@ const METHOD_ADJECTIVES = [
 ]
 
 const grammar = {
-  "title": ["{{objective}} using {{method}}", "{{objective}}: A {{method}} Approach"],
+  "title": ["{{objective_adjective}} {{objective}} using {{method_adjective}} {{method}}", "{{objective_adjective}} {{objective}}: A {{method}} Approach"],
   "objective": OBJECTIVES,
-  "method": METHODS
+  "method": METHODS,
+  "method_adjective": METHOD_ADJECTIVES,
+  "objective_adjective": OBJECTIVE_ADJECTIVES
 }
 
 const template = Generatr(grammar)
@@ -64,10 +71,10 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h2>{this.state.title}</h2>
-        <button onClick={this.onPressGenerate}>Generate</button>
-      </div>
+      <Container>
+        <Header>{this.state.title}</Header>
+        <GenerateButton onClick={this.onPressGenerate}>GENERATE</GenerateButton>
+      </Container>
     );
   }
 }

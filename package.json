@@ -6,7 +6,8 @@
     "generatr": "^0.1.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,7 +17,7 @@
     "postbuild": "react-snap"
   },
   "reactSnap": {
-    "source": "dist",
+    "source": "build",
     "minifyHtml": {
       "collapseWhitespace": false,
       "removeComments": false
