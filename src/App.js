@@ -56,11 +56,17 @@ const METHOD_ADJECTIVES = [
 ]
 
 const grammar = {
-  "title": ["{{objective_adjective}} {{objective}} using {{method_adjective}} {{method}}", "{{objective_adjective}} {{objective}}: A {{method}} Approach"],
+  "title": [
+    "{{objective_adjective}} {{objective}} {{preposition}} {{title_method}}",
+    "{{objective_adjective}} {{objective}}: A {{method}} Approach"
+  ],
+  "title_method": ["a {{method_adjective}} {{method}}", "a {{method_adjective}} {{method}} {{connector}} a {{method_adjective}} {{method}}"],
   "objective": OBJECTIVES,
   "method": METHODS,
   "method_adjective": METHOD_ADJECTIVES,
-  "objective_adjective": OBJECTIVE_ADJECTIVES
+  "objective_adjective": OBJECTIVE_ADJECTIVES,
+  "preposition": ["using", "with"],
+  "connector": ["and", "with"]
 }
 
 const template = Generatr(grammar)
