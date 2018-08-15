@@ -1,5 +1,5 @@
 # Thesis Title Generator
-A simple CS/IT thesis title generator. This is very simplistic so if you want to contribute to this, please make a pull request! :smile:
+A simple CS/IT thesis title generator. This is a very simplistic one so if you want to contribute to this, please make a pull request! :smile:
 
 ![Screenshot](screenshot.png)
 
