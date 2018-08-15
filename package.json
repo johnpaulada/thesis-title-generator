@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "generatr": "^0.1.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.4"
@@ -22,6 +23,7 @@
     }
   },
   "devDependencies": {
+    "flow-bin": "^0.78.0",
     "react-snap": "^1.10.1"
   }
 }

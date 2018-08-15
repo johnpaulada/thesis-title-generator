@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Generatr from './Generatr'
 
 const OBJECTIVES = [
@@ -63,73 +62,6 @@ class App extends Component {
     this.setState({title})
   }
 
-  generateTitle = () => {
-    return `${this.getObjective()} using a ${this.getMethod()}`
-  }
-
-  getObjective = () => {
-    return `${this.getObjectiveAdjective()} ${this.getActualObjective()}`
-  }
-
-  getActualObjective = () => {
-    const selectedObjective = pluck(OBJECTIVES)
-
-    return selectedObjective
-  }
-
-  getMethod = () => {
-    const adjective = this.getMethodAdjective()
-    const method = this.getActualMethod()
-    return `${adjective} ${method}` + this.getAdditionalMethod(method)
-  }
-
-  getAdditionalMethod = method => {
-    if (shouldBeIncluded()) {
-      const additionalMethod = this.getActualMethod()
-      const selectedIsSameAsPrevious = additionalMethod === method
-  
-      if (selectedIsSameAsPrevious) {
-        return this.getAdditionalMethod(method)
-      }
-
-      const connector = this.getConnector()
-      const adjective = this.getMethodAdjective()
-
-      return ` ${connector} a ${adjective} ${additionalMethod}`
-    }
-
-    return ""
-  }
-
-  getConnector = () => {
-    const connectors = [
-      "and",
-      "with"
-    ]
-
-    const selectedConnector = pluck(connectors)
-
-    return selectedConnector
-  }
-
-  getActualMethod = () => {
-    const selectedMethod = pluck(METHODS)
-
-    return selectedMethod
-  }
-
-  getObjectiveAdjective = () => {   
-    const selectedAdjective = pluck(OBJECTIVE_ADJECTIVES)
-
-    return selectedAdjective
-  }
-
-  getMethodAdjective = () => {
-    const selectedAdjective = pluck(METHOD_ADJECTIVES)
-
-    return selectedAdjective
-  }
-
   render() {
     return (
       <div>
@@ -138,28 +70,6 @@ class App extends Component {
       </div>
     );
   }
-}
-
-function pluck(list) {
-  const selectedIndex = getRandomIntInclusive(0, list.length-1)
-  const selectedItem = list[selectedIndex]
-
-  return selectedItem
-}
-
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function shouldBeIncluded() {
-  const random = Math.random()
-  const isAbove50Percent = random > 0.5
-  const shouldInclude = isAbove50Percent
-
-  return shouldInclude
 }
 
 export default App;
