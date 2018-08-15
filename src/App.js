@@ -3,7 +3,8 @@ import Generatr from './Generatr'
 import {
   Container,
   Header,
-  GenerateButton
+  GenerateButton,
+  MadeBy
 } from './Styles'
 
 const OBJECTIVES = [
@@ -74,6 +75,7 @@ class App extends Component {
       <Container>
         <Header>{this.state.title}</Header>
         <GenerateButton onClick={this.onPressGenerate}>GENERATE</GenerateButton>
+        <MadeBy>Made with ♥️ by John Paul Ada</MadeBy>
       </Container>
     );
   }

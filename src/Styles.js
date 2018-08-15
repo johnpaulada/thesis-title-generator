@@ -11,7 +11,7 @@ export const Container = styled.div`
 `
 
 export const Header = styled.h2`
-    color: white;
+    color: #FAFAFA;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
     font-size: 2em;
@@ -22,7 +22,7 @@ export const Header = styled.h2`
 
 export const GenerateButton = styled.button`
     background: none;
-    color: white;
+    color: #FAFAFA;
     border: none;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 300;
@@ -30,4 +30,10 @@ export const GenerateButton = styled.button`
     font-size: 1.5em;
     cursor: pointer;
     outline: none;
+`
+
+export const MadeBy = styled.small`
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    color: #FAFAFA;
 `
