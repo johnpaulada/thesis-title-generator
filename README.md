@@ -1,6 +1,11 @@
 # Thesis Title Generator
 A simple CS/IT thesis title generator. This is a very simplistic one so if you want to contribute to this, please make a pull request! :smile:
 
+[![forthebadge](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+
 ![Screenshot](screenshot.png)
 
 ## Stack
