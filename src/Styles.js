@@ -8,6 +8,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     background-color: #333;
+    position: relative;
 `
 
 export const Header = styled.h2`
@@ -36,4 +37,6 @@ export const MadeBy = styled.small`
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 300;
     color: #FAFAFA;
+    position: absolute;
+    bottom: 20px;
 `
