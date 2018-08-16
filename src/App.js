@@ -24,7 +24,7 @@ class App extends Component {
         <Header>{this.state.title}</Header>
         <GenerateButton onClick={this.onPressGenerate}>GENERATE</GenerateButton>
         <MadeBy>
-          Made with ♥️ by <LinkOut href="https://github.com/johnpaulada/thesis-title-generator">John Paul Ada</LinkOut>
+          Made with  <span aria-label="Heart" role="img">♥️</span> by <LinkOut href="https://github.com/johnpaulada/thesis-title-generator">John Paul Ada</LinkOut>
         </MadeBy>
       </Container>
     );
