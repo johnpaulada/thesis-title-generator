@@ -28,7 +28,7 @@ export const GenerateButton = styled.button`
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 300;
     letter-spacing: 5px;
-    font-size: calc(0.5em + 2vw);
+    font-size: calc(0.75em + 1vw);
     cursor: pointer;
     outline: none;
 `
