@@ -15,7 +15,7 @@ export const Header = styled.h2`
     color: #FAFAFA;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
-    font-size: 2em;
+    font-size: calc(1em + 2vw);
     text-align: center;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -23,12 +23,12 @@ export const Header = styled.h2`
 
 export const GenerateButton = styled.button`
     background: none;
-    color: #FAFAFA;
+    color: #cdfff0;
     border: none;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 300;
     letter-spacing: 5px;
-    font-size: 1.5em;
+    font-size: calc(0.5em + 2vw);
     cursor: pointer;
     outline: none;
 `
@@ -36,7 +36,11 @@ export const GenerateButton = styled.button`
 export const MadeBy = styled.small`
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 300;
-    color: #FAFAFA;
+    color: #848484;
     position: absolute;
     bottom: 20px;
+`
+
+export const LinkOut = styled.a`
+    color: #848484;
 `

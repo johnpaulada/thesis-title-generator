@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Generatr from './Generatr'
 import {
   Container,
-  Header,
   GenerateButton,
+  Header,
+  LinkOut,
   MadeBy
 } from './Styles'
 
@@ -86,7 +87,9 @@ class App extends Component {
       <Container>
         <Header>{this.state.title}</Header>
         <GenerateButton onClick={this.onPressGenerate}>GENERATE</GenerateButton>
-        <MadeBy>Made with ♥️ by John Paul Ada</MadeBy>
+        <MadeBy>
+          Made with ♥️ by <LinkOut href="https://github.com/johnpaulada/thesis-title-generator">John Paul Ada</LinkOut>
+        </MadeBy>
       </Container>
     );
   }
