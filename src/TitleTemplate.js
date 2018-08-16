@@ -29,7 +29,8 @@ const OBJECTIVES = [
   "Text-to-Speech",
   "Diet Recommendation",
   "Food Recommendation",
-  "Depression Heuristics"
+  "Depression Heuristics",
+  "Thesis Title Generator"
 ]
 
 const OBJECTIVE_ADJECTIVES = [
